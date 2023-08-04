@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        @page {
+            size: 1366px 768px; /* Ukuran layar Dell E6230 */
+            margin: 20mm;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background-color: #467d8f;
+            color: #fff;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1366px; /* Ukuran layar Dell E6230 */
+            height: 768px; /* Ukuran layar Dell E6230 */
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .left-column {
+            width: 500px;
+            margin-right: 20px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .right-column {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #436570;
+            color: #ffc107;
+            padding: 10px;
+            width: 100%;
+            margin-top: 0;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            text-transform: capitalize;
+            color: #ffc107;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: left;
+            margin-left: 15px;
+        }
+
+        .contact, .experience, .profile, .education {
+            background-color: #436570;
+            padding: 20px;
+            margin-bottom: 20px;
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact h2, .experience h2, .profile h2, .education h2 {
+            color: #ffc107;
+        }
+
+        .separator {
+            width: 100%;
+            height: 10px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .emoticon {
+            font-size: 120px;
+            line-height: 120px;
+            margin-bottom: 10px;
+        }
+
+        .education p::before,
+        .experience p::before {
+            content: "~ ";
+            color: #ffc107;
+        }
+
+        @media (max-width: 600px) {
+            .left-column {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .contact, .experience, .profile, .education {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <!-- Emotikon 1 -->
+            <div class="emoticon">🤗</div>
+            <div class="contact">
+                <h2>Kontak</h2>
+                <p>Email: arimbikirana27@gmail.com</p>
+                <p>Telepon: 085951499900</p>
+                <p>Instagram: @___zixline</p>
+                <p>Alamat: Jl. Ronggowarsito 2 RT 05 RW 10, Semarang Utara</p>
+            </div>
+            <div class="separator"></div>
+            <div class="experience">
+                <h2>Pengalaman</h2>
+                <p>~ Pernah mengikuti pelatihan Dokter Kecil (2016)</p>
+                <p>~ Pernah mengikuti Lomba Pramuka Pesta Siaga Juara Harapan 3 Putri (2017)</p>
+                <p>~ Pernah mengikuti Lomba Pramuka Penggalang Putri (2018)</p>
+                <p>~ Pernah mengikuti Lomba Cerita Islami Putri Juara 2 Tingkat Kecamatan (2019)</p>
+                <p>~ Pernah mengikuti Lomba Pencak Silat Juara 3 (2019)</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <h1>Arimbi Putri Kirania Tamtama</h1>
+            <div class="profile">
+                <h2>Profil</h2>
+                <p style="text-align: center;">Saya adalah anak perempuan terakhir dikeluarga saya. 27 November 2006 itulah saya untuk pertama kalinya lahir di dunia ini. Memiliki 2 kakak laki-laki yang meskipun tidak selalu sepemikiran, tidak menghalangi saya untuk tidak membenci mereka. Kini saya bersekolah di SMKN 02 Semarang, berada di kejuruan PPLG tidak menghalangi saya untuk terus berexplorasi.</p>
+            </div>
+            <div class="separator"></div>
+            <div class="education">
+                <h2>Pendidikan</h2>
+                <p>SD Kusuma Bhakti 2013-2019</p>
+                <p>SMPN 06 Semarang 2019-2022</p>
+                <p>SMKN 02 Semarang 2022-sekarang</p>
+            </div>
+            <div class="separator"></div>
+            <!-- Emotikon 2 -->
+            <div class="emoticon">😊</div>
+            <div class="contact">
+                <h2>Motto Hidup</h2>
+                <p>Jangan salahkan diri sendiri kalau tidak salah apa-apa 😝</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
